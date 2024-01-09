@@ -9,10 +9,11 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-	<header>
-		<?php include("site-menu.php"); ?>
-	</header>
+<inner-column>
+	<body <?php body_class(); ?>>
+		<header>
+			<?php include("site-menu.php"); ?>
+		</header>
 
 
-<main class="page-content">
+	<main class="page-content">

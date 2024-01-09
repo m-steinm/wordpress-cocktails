@@ -2,16 +2,18 @@
 	$name = get_field('name');
 	$description = get_field('description');
 	$notes = get_field('notes');
+    $category =  get_category_link('categories');
+    ?>
 
-?>
 
-<section class="page-section">
+<section class="page-section cocktail-card">
 <inner-column>
 	
 	<h1 class="name"><?=$name?></h1>
-	<p class="description">DESCRIPTION:<?=$description?></p>
+	<p class="description"><?=$description?></p>
+    <p class="category">CATEGORY:<?=$category?></p>
 
-	<p class="notes">NOTES:<?=$notes?></p>
+
 
 </inner-column>
 </section>
@@ -19,20 +21,18 @@
 <section>
 <inner-column>
 	
-		<?php
-$garnishes = get_field('garnish'); //this field is a relationship, can be many garnishes
-if( $garnishes ): ?>
-    <ul>
-    <?php foreach( $garnishes as $g ): //look at each garnish and get the data from that content type
-        $permalink = get_permalink( $g->ID );
-        $title = get_the_title( $g->ID );
-        // $custom_field = get_field( 'field_name', $g->ID );
-        ?>
-        <li>
-            GARNISH: <?=$title?>
-        </li>
-    <?php endforeach; ?>
-    </ul>
+<?php
+    $garnishes = get_field('garnish'); //this field is a relationship, can be many garnishes
+        if( $garnishes ): ?>
+            <ul>
+                <?php foreach( $garnishes as $g ): //look at each garnish and get the data from that content type
+                    $permalink = get_permalink( $g->ID );
+                    $title = get_the_title( $g->ID );
+                    // $custom_field = get_field( 'field_name', $g->ID );
+                    ?>
+            
+                <?php endforeach; ?>
+            </ul>
 
 
 <?php endif; ?>
@@ -41,18 +41,22 @@ if( $garnishes ): ?>
 </inner-column>
 </section>
 
-<section>
+<section class="page-section">
 <inner-column>
-	
-		<?php
+	<div class="recipe">
+<?php
 $ingredients = get_field('ingredients');
 
     // Check rows exists.
-    if( have_rows('ingredients') ):
-
+    if( have_rows('ingredients') ): ?>
+        <ul>
+<?php            
         // Loop through rows.
         while( have_rows('ingredients') ) : the_row();
 //can be abstracted
+            ?>
+            <li>
+<?php
             $ingredient = get_sub_field('ingredient')[0];
             $liquor = $ingredient->post_title;
                 echo $liquor;
@@ -63,17 +67,27 @@ $ingredients = get_field('ingredients');
 
             the_sub_field('unit');
             // Do something...
-           
-
+          
+          ?> 
+             </li>
+<?php             
         // End loop.
         endwhile;
-
+        ?>
+         <li class="garnish">
+            <?=$title?>
+          </li>
+        </ul>
+<?php        
     // No value.
     else :
         // Do something...
     endif;
 ?>
 
+    <p class="notes"><?=$notes?></p>
+
+    </div>
 </inner-column>
 </section>
 

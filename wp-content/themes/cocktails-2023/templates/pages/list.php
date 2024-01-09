@@ -1,21 +1,23 @@
 <section class="page-section">
 	<inner-column>
-		<h1>This is the list page now</h1>
+		<h1>Cocktails</h1>
 
-		<?php
+		<div class="cocktail-list">
+			<?php
 
-			$parameters = array(
-				'post_type' => 'cocktail',
-				);
+				$parameters = array(
+					'post_type' => 'cocktail',
+					);
 
-				$query = new WP_Query( $parameters ); 
+					$query = new WP_Query( $parameters ); 
 
-				while ( $query->have_posts() ) : $query->the_post(); 
-					include(getFile('templates/components/cocktail-card.php'));
+					while ( $query->have_posts() ) : $query->the_post(); 
+						include(getFile('templates/components/cocktail-card.php'));
 
-				endwhile;
+					endwhile;
 
-				wp_reset_postdata(); 
-		?>
+					wp_reset_postdata(); 
+			?>
+		</div>
 	</inner-column>
 </section>
