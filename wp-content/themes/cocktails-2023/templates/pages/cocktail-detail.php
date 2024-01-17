@@ -8,18 +8,24 @@
 
 <section class="page-section cocktail-card">
 <inner-column>
-    <?php 
-        $category = get_field('category');
-        if( $category ): ?> 
-            <?php var_dump($category) ?>
-            <a href="<?php get_category_link($category->term_id) ?>"><?=$category->name?></a>
-            <p><?php echo esc_html( $category->description ); ?></p>
-        <?php endif; ?>
+
+    <?php
+        $collections = get_field('collection'); //this field is a relationship, can be many collections
+            if( $collections ): ?>
+
+                <?php foreach( $collections as $collection ): //look at each collection and get the data from that content type
+                    $permalink = get_permalink( $collection->ID );
+                    $title = get_the_title( $collection->ID );
+                    ?>
+
+                    <a href="<?php the_permalink($collection->ID) ?>"><?=$title?></a>
+
+                <?php endforeach; ?>
+
+    <?php endif; ?>
 
     	<h1 class="name"><?=$name?></h1>
     	<p class="description"><?=$description?></p>
-
-
 
 </inner-column>
 </section>

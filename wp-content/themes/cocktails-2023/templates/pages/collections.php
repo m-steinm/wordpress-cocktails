@@ -12,7 +12,7 @@
 					$query = new WP_Query( $parameters ); 
 
 					while ( $query->have_posts() ) : $query->the_post(); 
-						include(getFile('templates/components/cocktail-card.php'));
+						include(getFile('templates/components/collection-card.php'));
 
 					endwhile;
 
