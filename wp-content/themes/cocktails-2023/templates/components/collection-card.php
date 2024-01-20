@@ -4,29 +4,12 @@
 
 ?>
 
-<cocktail-card>
+<collection-card>
 	<h2 class="name"><?=$name?></h2>
 
 	<p class="description"><?=$description?></p>
 
-	<p class="test">test</p>
-
-
-
-
-<!-- 	<h2>Ingredient</h2>
-	<h2>Ingredient 2</h2>
-	<h2>Garnish</qqh2>
-	<h2>Glassware</h2> -->
-
-	<a href="<?php the_permalink(); ?>">More</a>
-
-</cocktail-card>
-
-
-
-<!-- scratch 
-
+	<?php
 	$cocktails = get_field('cocktails'); //this field is a relationship, can be many cocktails
 	if( $cocktails ): ?>
 
@@ -35,10 +18,16 @@
 		$title = get_the_title( $cocktail->ID );
 		?>
 
-		<a href="<?php the_permalink($cocktail->ID) ?>"><?=$cocktails?></a>
+		<a href="><?=$permalink?>"><?=$title?></a>
 
 		<?php endforeach; ?>
 
 	<?php endif; ?>
 
-	-->
+
+	<a href="<?php the_permalink(); ?>">More</a>
+
+</collection-card>
+
+
+	

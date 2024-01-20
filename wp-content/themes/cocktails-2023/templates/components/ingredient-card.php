@@ -4,7 +4,7 @@
 
 ?>
 
-<cocktail-card>
+<ingredient-card>
 	<h2 class="name"><?=the_title()?></h2>
 
 	<p class="description"><?=$description?></p>
@@ -17,5 +17,5 @@
 
 	<a href="<?php the_permalink(); ?>">More</a>
 
-</cocktail-card>
+</ingredient-card>
 

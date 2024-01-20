@@ -26,7 +26,31 @@
 	}
 
 	if ( is_singular('collection') ) {
-		include("templates/pages/cocktail-detail.php");
+		include("templates/pages/collection-detail.php");
+	}
+
+	if ( is_singular('liquor') ) {
+		include("templates/pages/ingredient-detail.php");
+	}
+
+	if ( is_singular('juice') ) {
+		include("templates/pages/ingredient-detail.php");
+	}
+
+	if ( is_singular('syrup') ) {
+		include("templates/pages/ingredient-detail.php");
+	}
+
+	if ( is_singular('other') ) {
+		include("templates/pages/ingredient-detail.php");
+	}
+
+	if ( is_singular('spirits') ) {
+		include("templates/pages/ingredient-detail.php");
+	}
+
+	if ( is_singular('garnish') ) {
+		include("templates/pages/ingredient-detail.php");
 	}
 
 

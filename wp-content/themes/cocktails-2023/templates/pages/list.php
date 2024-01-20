@@ -1,6 +1,6 @@
 <section class="page-section">
 	<inner-column>
-		<h1>Cocktails</h1>
+		<!-- <h1>Cocktails</h1> -->
 
 		<div class="cocktail-list">
 			<?php

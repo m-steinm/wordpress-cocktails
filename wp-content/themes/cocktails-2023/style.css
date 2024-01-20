@@ -39,37 +39,54 @@ inner-column {
 	gap: 20px;*/
 
 	display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(5em, 15em));
-   gap: 15px;
+/*	justify-content: center;*/
+   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   gap: 40px 15px;
 }
 
 cocktail-card {
 	display: grid;
-	gap: 30px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: minmax(100px, 1fr) 1fr;
+/*	gap: 30px;*/
 	border: 2px solid black;
 	padding: 10px;
-	width: 200px;
+/*	width: 225px;*/
+/*	height: 300px;*/
 	font-family: 'Inter';
 /*	box-shadow: 2px 2px 0px  black;*/
 
 }
 
 cocktail-card .name{
+	display: grid;
 	font-size: 30px;
-
+	align-items: start;
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
 }
 
-cocktail-card box{
+cocktail-card .box {
 	display: block;
 	border: 2px solid black;
 	padding: 10px;
 	background-color: yellow;
 	box-shadow: 4px 4px 0px  gray;
+	justify-content: start;
+
+	grid-column: 1 / 3;
+	grid-row: 2 / 3;
 
 }
 
 cocktail-card  a {
 	text-decoration: none;
+}
+
+cocktail-card  .spirit, .collection-title {
+font-size: 14px;
+font-weight: bold;
+opacity: 50%;
 }
 
 .cocktail-card {

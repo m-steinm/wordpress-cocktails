@@ -71,10 +71,15 @@
         <?php
                     $ingredient = get_sub_field('ingredient')[0];
                     $liquor = $ingredient->post_title;
-                        echo $liquor;
-                        the_permalink($ingredient->ID)
+                    ?>
+                    <a href="<?=the_permalink($ingredient->ID)?>">
+
+                        <?=$liquor?>
+                        </a>
+<!-- 
+                        // the_permalink($ingredient->ID)
                     // Load sub field value.
-                        ?>
+                         -->
                             -
                             <?php
                     $measurment = get_sub_field('measurment');
