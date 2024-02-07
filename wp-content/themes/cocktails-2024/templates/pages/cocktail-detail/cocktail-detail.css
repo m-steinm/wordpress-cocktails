@@ -1,0 +1,36 @@
+.detail-container {
+	display: grid;
+	border: 2px solid black;
+	padding: 10px;
+}
+
+.detail-header{
+	border: 2px solid black;
+	background-color: yellow;
+	padding: 5px 10px;
+	width: 100%;
+}
+
+.collection {
+	margin-top: 10px;
+}
+
+.recipe {
+	display: grid;
+	justify-content: start;
+/*	width: fit-content;*/
+	max-width: 50ch;
+	padding: 10px;
+	border: 2px solid black;
+	box-shadow: 6px 6px black;
+}
+
+.recipe li {
+	display: flex;
+}
+ .notes {
+/*		max-width: 50ch;*/
+		border-top: 2px dotted gray;
+		margin-top:5px;
+}
+
