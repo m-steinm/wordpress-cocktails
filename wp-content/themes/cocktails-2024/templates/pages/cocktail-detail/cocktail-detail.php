@@ -19,16 +19,17 @@ $notes = get_field('notes');
 <div class="detail-container">
 
     <section class="page-section detail">
-    <inner-column>
+   
       
         <div class="detail-header">
             <h1 class="loud-voice"><?=$name?></h1>
         </div>   
-
-        <a class="collection calm-voice-plus" href="<?php the_permalink($collection->ID) ?>"><?=$title?></a>
-
-    </inner-column>
+    
     </section>
+<div class="collection">
+    <a class=" calm-voice-plus" href="<?php the_permalink($collection->ID) ?>"><?=$title?></a>
+</div>
+<div class="recipe-wrapper">
 
 <section class="page-section recipe calm-voice">
 <inner-column>
@@ -61,7 +62,7 @@ $notes = get_field('notes');
                 $permalink = get_permalink( $g->ID );
                 $garnish = get_the_title( $g->ID );
             ?>
-                            <li class="garnish"><?=$garnish?></li>
+                 <li class="garnish"><?=$garnish?></li>
 
             <?php endforeach; ?>
         <?php endif; ?>
@@ -70,14 +71,15 @@ $notes = get_field('notes');
             else :
             endif;
 ?>
-        <div class="note-wrapper">
         <p class="notes"><?=$notes?></p>
-        </div>
+        
 </inner-column>
 </section>
+</div>
 
- <p class="description"><?=$description?></p>
-
+<div class="description">
+    <p class="calm-voice"><?=$description?></p>
+</div>
 </div>
 
 
