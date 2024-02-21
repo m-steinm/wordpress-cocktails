@@ -8,8 +8,6 @@
 
     <div class="collection-list">
 
-    <inner-column>
-
        <?=$name?>
 
     <?php
@@ -21,12 +19,21 @@
         $title = get_the_title( $cocktail->ID );
         ?>
 
-        <a href="><?=$permalink?>"><?=$title?></a>
+            <cocktail-card>
+
+            <h1 class="name attention-voice "><?=$title?></h2>
+
+        <a class="description-box calm-voice" href="<?php the_permalink(); ?>" >
+            <box>
+                <p class="description"><?=$info?></p>
+            </box>
+        </a>
+
+    </cocktail-card>
 
         <?php endforeach; ?>
 
     <?php endif; ?>
 
         </div>
-    </inner-column>
 </section>

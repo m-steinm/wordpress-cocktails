@@ -1,4 +1,4 @@
-.cocktail-list {
+/*.cocktail-list {
 	display: grid;
 	grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
 	gap: 40px 15px;
@@ -7,7 +7,7 @@
 
 cocktail-card {
 	display: grid;
-/*	grid-template-columns: 1fr 1fr 1fr;*/
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 100px auto 150px;
 	padding: 10px;
 	border: 2px solid black;
@@ -15,8 +15,8 @@ cocktail-card {
 
 cocktail-card .name-wrapper {
 	display: grid;
-/*	align-items: center;*/
-/*	grid-column:1 / -1 ;*/
+	align-items: center;
+	grid-column:1 / -1 ;
 	grid-row:1 / 2;
 	border: 2px solid green;
 }
@@ -26,19 +26,19 @@ cocktail-card .name-wrapper {
 
 	display: flex;
 	gap: 10px;
-/*	border: 2px solid purple;*/
+	border: 2px solid purple;
 	height: fit-content;
 } 
 cocktail-card .spirit {
 	display:grid;
 	justify-self: start;
-/*	border: 2px solid red;*/
+	border: 2px solid red;
 }
 
 cocktail-card .collection-title {
 	display: grid;
 	justify-self: start;
-/*	border: 2px solid orange;*/
+	border: 2px solid orange;
 }
 
 .description-box {
@@ -51,4 +51,94 @@ cocktail-card .collection-title {
 	padding: 10px 10px;
 
 
+/*/
+/*//////////*/
+/*ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+	padding: 20px;
+	border: 1px solid red;
 }
+
+.cocktail-list {
+	display: grid;
+	grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+	gap: 40px 15px;
+grid-auto-rows: auto;
+}
+
+.cocktail {
+	border: 1px solid blue;
+	
+	grid-row: span 3;
+
+	display: grid;
+	grid-template-rows: subgrid;
+	
+	margin-bottom: 20px;*/ /* because the gap needs to be the same for the grid... hmmm - */
+/*}*/
+
+/*cocktail-card {
+	height: 100%;
+	border: 2px solid red;
+	grid-row: span 3;
+	
+	display: grid;
+	grid-template-rows: subgrid;
+	
+	padding: 10px;}
+
+	*/
+
+.cocktail-list {
+	display: grid;
+	grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+	gap: 15px;
+
+/*	grid-template-rows: repeat(3, 1fr);*/
+
+
+}
+
+.page-section{
+			margin: 40px 15px; 
+
+}
+.cocktail {
+	display: grid;
+	border: 3px solid black;
+	box-shadow: 5px 5px black;
+	padding: 10px;
+
+	grid-row: span 3;
+	grid-template-rows: subgrid;
+
+
+
+}
+
+cocktail-card {
+	display:grid;
+	grid-template-rows: subgrid;
+	grid-row: span 3;
+/*	height: 100%;*/
+
+}
+
+.filters {
+
+
+	display: flex;
+/*	border: 2px solid green;*/
+/*	margin-top: 5px;*/
+	gap: 10px;
+}
+
+.description-box {
+	border: 3px solid black;
+	background-color: yellow;
+	padding: 10px;
+}
+

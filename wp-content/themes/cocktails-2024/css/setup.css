@@ -39,3 +39,13 @@ svg {
 :where(:not(:defined)) {
 	display: block;
 }
+
+
+inner-column {
+	border: 2px solid red;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+}

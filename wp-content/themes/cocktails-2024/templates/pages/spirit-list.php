@@ -2,7 +2,6 @@
 </section>
 
 <section class="page-section">
-	<inner-column>
 		<h1>Liquor</h1>
 
 		<div class="ingredient-list">
@@ -22,5 +21,4 @@
 					wp_reset_postdata(); 
 			?>
 		</div>
-	</inner-column>
 </section>

@@ -2,6 +2,8 @@
 $name = get_field('name');
 $description = get_field('description');
 $notes = get_field('notes');
+
+$picture = get_field('picture');
 ?>
 
 
@@ -18,8 +20,7 @@ $notes = get_field('notes');
 
 <div class="detail-container">
 
-    <section class="page-section detail">
-   
+    <section class="detail">
       
         <div class="detail-header">
             <h1 class="loud-voice"><?=$name?></h1>
@@ -29,10 +30,9 @@ $notes = get_field('notes');
 <div class="collection">
     <a class=" calm-voice-plus" href="<?php the_permalink($collection->ID) ?>"><?=$title?></a>
 </div>
-<div class="recipe-wrapper">
 
-<section class="page-section recipe calm-voice">
-<inner-column>
+<div class="recipe-wrapper">
+<section class="recipe calm-voice">
 
 <?php
     $ingredients = get_field('ingredients');
@@ -70,13 +70,17 @@ $notes = get_field('notes');
             <?php        
             else :
             endif;
-?>
-        <p class="notes"><?=$notes?></p>
+?>      
+        <div class="notes">
+        <p><?=$notes?></p>
+        </div>
         
-</inner-column>
 </section>
 </div>
 
+<picture style='background-image: url(<?=$picture['url']?>') >
+    <!-- <img class="cocktail-picture" src="" alt=""> -->
+</picture>
 <div class="description">
     <p class="calm-voice"><?=$description?></p>
 </div>

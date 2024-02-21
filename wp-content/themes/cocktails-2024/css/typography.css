@@ -1,3 +1,4 @@
+
 /* Should we pull in @fonts here? */
 /* don't think you can... might have to be higher up (the top of) the food chain! */
 
@@ -7,7 +8,7 @@ body {
 
 .loud-voice {
 	font-family: 'Inter', sans-serif;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	font-weight: 700;
 /*	font-size: clamp(36px, 5vw, 60px);*/
 }
@@ -40,6 +41,8 @@ body {
 }
 
 .link-voice {
+	font-family: 'Inter', sans-serif;
+	font-size: 1rem;
 	color: blue;
 	font-weight: 700;
 }

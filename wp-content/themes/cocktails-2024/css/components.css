@@ -2,3 +2,5 @@
 @import '../templates/components/cocktail-card/cocktail-card.css';
 @import '../templates/pages/cocktail-detail/cocktail-detail.css';
 @import '../templates/pages/ingredient-detail.css';
+@import '../templates/pages/ingredient-list/ingredient-list.css';
+@import '../templates/components/ingredient-card/ingredient-card.css';

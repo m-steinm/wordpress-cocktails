@@ -13,7 +13,7 @@
 
 	if ( is_page('ingredients') ) {
 
-		include("templates/pages/ingredient-list.php");
+		include("templates/pages/ingredient-list/ingredient-list.php");
 	}
 
 	if ( is_page('collections') ) {

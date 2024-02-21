@@ -1,0 +1,30 @@
+ingredient-card {
+	display: grid;
+/*	grid-template-columns: 1fr;*/
+/*	grid-template-rows: 1fr 1fr;*/
+	margin-top: 20px;
+	border: 3px solid black;
+	box-shadow: 3px 3px;
+	gap: 20px;
+	
+	padding: 20px;
+
+
+}
+
+ingredient-card .name{
+	border: 2px solid red;
+	grid-row: 1 / 2;
+
+
+	
+}
+
+ingredient-card .more{
+
+/*	border: 2px solid green;*/
+	grid-row: 2/ 3;
+/*	align-self: end;*/
+
+	
+}

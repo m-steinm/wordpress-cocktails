@@ -2,6 +2,8 @@
     $name = get_field('name');
     $description = get_field('description');
     $bases = get_field('base_spirit'); 
+
+    
 ?>
 <?php
     $collections = get_field('collection'); 
@@ -30,26 +32,25 @@ if( $bases ): ?>
 <?php endif; ?>
 
 
+<li class="cocktail">
 
-<cocktail-card>
-    <div class="name-wrapper">
-    <h2 class="name attention-voice "><?=$name?></h2>
-   </div>
+    <cocktail-card>
 
-   <div class="sorting-wrapper">
-    
-    <p class="collection-title calm-voice-plus"><a href="<?=$collection_link?>"><?=$collection_title?></a></p>
-    
-    <p class="spirit calm-voice-plus"><a href="<?=$base_link?>"><?=$spirit?></a></p>
-   </div>
+            <h1 class="name attention-voice "><?=$name?></h2>
 
-    <a class="description-box calm-voice" href="<?php the_permalink(); ?>" >
-        <box>
-            <p class="description"><?=$description?></p>
-        </box>
-    </a>
+            <div class="filters">
+                <p class="category calm-voice-plus"><a href="<?=$collection_link?>"><?=$collection_title?></a></p>
 
-</cocktail-card>
+                <p class="spirit calm-voice-plus"><a href="<?=$base_link?>"><?=$spirit?></a></p>
+            </div>
+       
+        <a class="description-box calm-voice" href="<?php the_permalink(); ?>" >
+            <box>
+                <p class="description"><?=$description?></p>
+            </box>
+        </a>
 
+    </cocktail-card>
 
+</li>
 

@@ -1,8 +1,7 @@
 <section class="page-section">
-	<inner-column>
 		<!-- <h1>Cocktails</h1> -->
 
-		<div class="cocktail-list">
+		<ul class="cocktail-list">
 			<?php
 
 				$parameters = array(
@@ -18,6 +17,6 @@
 
 					wp_reset_postdata(); 
 			?>
-		</div>
-	</inner-column>
+
+		</ul>
 </section>

@@ -1,0 +1,9 @@
+.ingredient-list {
+	display: grid;
+	gap: 10px;
+
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+};
+
+
