@@ -7,7 +7,7 @@ $picture = get_field('picture');
 ?>
 
 
-
+<!-- clean up this part -->
 <?php
     $collections = get_field('collection');
         if( $collections ): ?>
@@ -18,7 +18,7 @@ $picture = get_field('picture');
             <?php endforeach; ?>
         <?php endif; ?>
 
-<div class="detail-container">
+<div class="cocktail-detail">
 
     <section class="detail">
       
@@ -40,6 +40,7 @@ $picture = get_field('picture');
         <ul>
             <?php while( have_rows('ingredients') ) : the_row();?>
                 <li>
+                    <!-- this could be its own card -->
                     <?php
                         $ingredient = get_sub_field('ingredient')[0];
                         $liquor = $ingredient->post_title;

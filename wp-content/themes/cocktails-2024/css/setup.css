@@ -42,8 +42,8 @@ svg {
 
 
 inner-column {
-	border: 2px solid red;
-}
+/*	border: 2px solid red;*/
+/*}*/
 
 header {
 	display: flex;

@@ -92,6 +92,8 @@ grid-auto-rows: auto;
 
 	*/
 
+
+/*move this somewhere else*/
 .cocktail-list {
 	display: grid;
 	grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
@@ -114,31 +116,22 @@ grid-auto-rows: auto;
 
 	grid-row: span 3;
 	grid-template-rows: subgrid;
-
-
-
 }
 
 cocktail-card {
-	display:grid;
+	display: grid;
 	grid-template-rows: subgrid;
 	grid-row: span 3;
-/*	height: 100%;*/
 
-}
-
-.filters {
-
-
-	display: flex;
-/*	border: 2px solid green;*/
-/*	margin-top: 5px;*/
-	gap: 10px;
-}
-
-.description-box {
-	border: 3px solid black;
-	background-color: yellow;
-	padding: 10px;
+	& .filters {
+		display: flex;
+		gap: 10px;
+	}
+	
+	& .description-box {
+		border: 3px solid black;
+		background-color: yellow;
+		padding: 10px;
+	}
 }
 

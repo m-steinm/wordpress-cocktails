@@ -13,7 +13,7 @@ ingredient-card {
 }
 
 ingredient-card .name{
-	border: 2px solid red;
+/*	border: 2px solid red;*/
 	grid-row: 1 / 2;
 
 

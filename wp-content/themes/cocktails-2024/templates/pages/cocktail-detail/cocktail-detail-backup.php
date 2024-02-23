@@ -34,7 +34,7 @@
 
     <?php endif; ?>
 
-<div class="detail-container">
+<div class="cocktail-detail">
 
 
 <section class="page-section detail">

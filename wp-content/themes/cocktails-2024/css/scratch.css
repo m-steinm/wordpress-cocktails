@@ -131,7 +131,7 @@ ingredient-card {
 
 /*COCKTAIL DETAIL*/
 
-.detail-container {
+.cocktail-detail {
 	display: grid;
 }
 

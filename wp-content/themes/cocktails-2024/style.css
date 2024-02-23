@@ -16,13 +16,15 @@ Tags:
 
 
 @import 'css/reset.css';
-@import 'css/developer-styles.css';
-@import 'css/modules.css';
 @import 'css/preset.css';
-@import 'css/settings.css';
 @import 'css/setup.css';
 @import 'css/structure.css';
 @import 'css/typography.css';
+@import 'css/settings.css';
+@import 'css/developer-styles.css';
+@import 'css/modules.css';
+
+
 @import 'css/components.css';
 
 /*header {

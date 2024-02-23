@@ -1,4 +1,6 @@
-.detail-container {
+/*nest under cocktail detail*/
+
+.cocktail-detail {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 /*	grid-template-rows: 1fr 1fr 2fr 1fr;*/
@@ -10,7 +12,7 @@
 
 }
 
-/*.detail-container * {
+/*.cocktail-detail * {
 	border: 1px solid dodgerblue;
 }
 */
@@ -87,7 +89,7 @@ object-fit: cover;
 	.detail-header{
 		background-color: green;
 }
-	.detail-container {
+	.cocktail-detail {
 	display: grid;
 	grid-template-rows; 1fr, 1fr 1fr;
 	gap: 10px;
