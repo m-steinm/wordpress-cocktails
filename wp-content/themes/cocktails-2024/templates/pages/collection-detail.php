@@ -15,21 +15,21 @@
     if( $cocktails ): ?>
 
         <?php foreach( $cocktails as $cocktail ): //look at each cocktail and get the data from that content type
-        $permalink = get_permalink( $cocktail->ID );
-        $title = get_the_title( $cocktail->ID );
+            $permalink = get_permalink( $cocktail->ID );
+            $title = get_the_title( $cocktail->ID );
         ?>
 
             <cocktail-card>
 
             <h1 class="name attention-voice "><?=$title?></h2>
 
-        <a class="description-box calm-voice" href="<?php the_permalink(); ?>" >
-            <box>
-                <p class="description"><?=$info?></p>
-            </box>
-        </a>
+            <a class="description-box calm-voice" href="<?php the_permalink(); ?>" >
+                <box>
+                    <p class="description"><?=$descriptio?></p>
+                </box>
+            </a>
 
-    </cocktail-card>
+            </cocktail-card>
 
         <?php endforeach; ?>
 
